@@ -1,5 +1,6 @@
 
 import LancerDe from './LancerDe';
+import "./App.css"
 
 function App() {
   return (
