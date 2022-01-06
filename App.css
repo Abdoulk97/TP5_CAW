@@ -1,0 +1,138 @@
+.App {
+  text-align: center;
+  align-content: center;
+}
+
+.App-logo {
+  background-color: rgb(238, 255, 0);
+  height: 20vmin;
+  pointer-events: none;
+  border: #d61515 solid 4px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    align-items: center;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.Die {
+  align-content: center;
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 100vh;
+}
+
+/* Shows each dice in one row */
+.Dice {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+/* Stylling rolldice button */
+button {
+  color: #ffffff;
+  font-size: 20px;
+  width: 9em;
+  padding: 1em;
+  border: 0px;
+  border-radius: 10px;
+
+  background-color: rgb(0, 0, 0);
+
+  align-self: center;
+  text-align: center;
+}
+
+/* Setting hover effect on button */
+button:hover {
+  cursor: pointer;
+}
+
+/* Styling each Die */
+.De {
+  align-content: center;
+  font-size: 10em;
+  padding: 0.25em;
+  color: slateblue;
+}
+.score {
+  text-align: center;
+}
+.part {
+  text-align: center;
+  padding-bottom: 25px;
+}
+.win {
+  text-align: center;
+  color: white;
+  background: rgb(39, 156, 39);
+  padding: 5px;
+  width: 200px;
+  margin: 0 auto;
+}
+.again {
+  text-align: center;
+  padding: 5px;
+  width: 200px;
+  margin: 0 auto;
+  background: rgb(255, 154, 2);
+}
+.start {
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.face {
+  align-content: center;
+}
+
+@keyframes wobble {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  15% {
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  }
+  30% {
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+  }
+  45% {
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  }
+  60% {
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+  }
+  75% {
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
